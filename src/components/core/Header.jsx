@@ -4,16 +4,17 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
-    <nav className="bg-black z-[999] text-sm px-20 h-[61px] fixed top-0 left-0 right-0 flex justify-between items-center">
+    <nav className="bg-black z-[999] text-sm px-4 lg:px-20 h-[61px] fixed top-0 left-0 right-0 flex justify-between items-center">
       <h1 className="text-white font-glock font-bold text-3xl">Benjamin</h1>
-      <div className="flex space-x-8 items-center h-full">
-        <ul className="flex space-x-8 text-white">
-          <li className="hover:text-orange-600"> <Link to="/">Home</Link></li>
+      <div className=" lg:space-x-8 space-x-4 min-[800px]:flex hidden  items-center h-full">
+        <ul className="flex lg:space-x-8 space-x-4 text-white">
           <li className="hover:text-orange-600"> <Link to="/about">About</Link></li>
-          <li className="hover:text-orange-600"> <Link to="/projects">Projects</Link></li>
+          <li className="hover:text-orange-600"> <Link to="/blog">Blog</Link></li>
+          <li className="hover:text-orange-600"> <Link to="/multimedia">Multimedia</Link></li>
+          <li className="hover:text-orange-600"> <Link to="/collab">Collaborations</Link></li>
           <li className="hover:text-orange-600"> <Link to="/contact">Contact</Link></li>
         </ul>
-        <div className="flex space-x-8 items-center text-white">
+        <div className="hidden lg:flex space-x-8 items-center text-white ">
           <Facebook size={18} />
           <Instagram size={18} />
           <Linkedin size={18} />
@@ -22,6 +23,7 @@ export default function Header() {
           Lorem ipsum dolor sit.
         </div>
       </div>
+      
     </nav>
   );
 }
