@@ -1,5 +1,5 @@
 import React from "react";
-import { about } from "../assets";
+import { about,ben_img_21} from "../assets";
 
 export default function About() {
   return (
@@ -15,7 +15,7 @@ export default function About() {
           </div>
 
           <div className="relative z-10">
-            <h1 className="text-6xl md:text-8xl  font-bold mb-8 font-glock">
+            <h1 className="text-6xl md:text-8xl font-bold mb-8 font-glock">
               Hi, I'm Benjamin
             </h1>
 
@@ -33,9 +33,9 @@ export default function About() {
                 <span>Dreamer</span>
               </p>
             </div>
-            <div className="flex-end flex  flex-col justify-end items-end ">
-              <div className="mt-8 max-w-xl ">
-                <p className="text-sm leading-relaxed ">
+            <div className="flex-end flex flex-col justify-end items-end">
+              <div className="mt-24 max-w-sm">
+                <p className="text-xs leading-relaxed">
                   I'm Rilea, and I've been where you are—overwhelmed, burned
                   out, and questioning if success is worth the struggle. I
                   started my first business with endless ambition but quickly
@@ -47,12 +47,78 @@ export default function About() {
                 </p>
               </div>
 
-              <button className="bg-orange-500 text-white px-8 py-4 mt-8 hover:bg-orange-600 transition-colors">
+              <button className="bg-orange-500 text-white px-8 py-4 hover:bg-orange-600 transition-colors">
                 WORK WITH ME
               </button>
             </div>
           </div>
         </div>
+      </div>
+
+      <div className=" text-black mt-40 py-16 gap-6 flex px-8 max-w-6xl mx-auto">
+      <div className="flex-1 flex  flex-col gap-6 text-sm mt-0.5">
+        <h2 className="py-8 flex items-center justify-center  text-6xl font-bold font-glock">Banjamin</h2>
+      <div className="aspect-square  max-h-fit w-full bg-red-500 ">
+      <img
+              src={ben_img_21}
+              alt="Portrait"
+              className="w-full h-full object-cover  object-top "
+            />
+          </div>
+          <div className="aspect-square w-full  bg-red-500 ">
+            <h3 className="uppercase text-sm tracking-wider mb-4">
+              Peak Performance
+            </h3>
+            <h2 className="text-4xl font-bold mb-4">
+              PEAK
+              <br />
+              PERFORMANCE
+            </h2>
+            <p className="text-sm leading-relaxed mb-8">
+              Achieve your highest potential with guided strategies and
+              expertise.
+            </p>
+            <button className="bg-white text-orange-500 px-8 py-3 mx-auto hover:bg-gray-100 transition-colors">
+              LEARN MORE
+            </button>
+          </div>
+      </div>
+      <div className="flex-1 flex flex-col gap-6">
+      <div className="aspect-[19/21.7] w-full p-6 bg-red-500 ">
+            <h3 className="uppercase text-sm tracking-wider mb-4">
+              One on One Coaching
+            </h3>
+            <h2 className="text-4xl font-bold mb-4">
+              BUSINESS
+              <br />
+              MENTORING
+            </h2>
+            <p className="text-sm leading-relaxed mb-8">
+              Personalized coaching sessions tailored to your business needs and
+              goals.
+            </p>
+            <button className="bg-black text-white px-8 py-3 mx-auto hover:bg-gray-800 transition-colors">
+              LEARN MORE
+            </button>
+          </div>
+          <div className= " aspect-[19/21.7]  w-full p-6 bg-red-500  ">
+            <h3 className="uppercase text-sm tracking-wider mb-4">
+              Peak Performance
+            </h3>
+            <h2 className="text-4xl font-bold mb-4">
+              PEAK
+              <br />
+              PERFORMANCE
+            </h2>
+            <p className="text-sm leading-relaxed mb-8">
+              Achieve your highest potential with guided strategies and
+              expertise.
+            </p>
+            <button className="bg-white text-orange-500 px-8 py-3 mx-auto hover:bg-gray-100 transition-colors">
+              LEARN MORE
+            </button>
+          </div>
+      </div>
       </div>
     </>
   );
