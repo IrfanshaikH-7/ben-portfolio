@@ -1,4 +1,6 @@
 import React from 'react';
+import { motion, useScroll, useTransform } from 'framer-motion';
+import Multimedia from '../components/screens/home/Multimedia';
 
 export default function Home() {
 
@@ -52,12 +54,33 @@ export default function Home() {
       </section>
 
       {/* third section */}
-      <section className='w-full grid grid-cols-1 md:grid-cols-2    mx-auto'>
-        <div className="w-full h-80 md:h-auto max-h-[500px] md:aspect-square flex-1 bg-gray-400"></div>
-        <div className="w-full h-80 md:h-auto max-h-[500px] md:aspect-square flex-1"></div>
-        <div className="w-full h-80 md:h-auto max-h-[500px] md:aspect-square flex-1"></div>
-        <div className="w-full h-80 md:h-auto max-h-[500px] md:aspect-square flex-1 bg-gray-400"></div>
+      <section className='relative flex flex-col md:flex-row gap-8 items-center p-8 justify-center overflow-hidden'>
+        {/* Background text strip */}
+        <div className='absolute -left-12 -right-12 -rotate-12 bg-black h-24 w-[150%] top-[45%]   flex items-center overflow-hidden whitespace-nowrap'>
+          <div className='animate-scroll flex'>
+            {[...Array(30)].map((_, i) => (
+              <span key={i} className='text-lg font-bold text-neutral-600 mx-4'>BLOGS</span>
+            ))}
+          </div>
+        </div>
+
+        <div className='w-full flex flex-col mx-auto gap-8 relative'>
+          <h3 className='text-xl md:text-5xl font-rubix text-white z-10 leading-none'>Explore <span className='text-orange-600 font-serif italic'>Ben's</span> Blogs</h3>
+
+          <article className="w-full h-80 md:h-auto max-h-[500px] md:aspect-square bg-gray-400"></article>
+          <button className='flex  py-4 rounded-none items-center font-medium border-b-2 border-white mt-8 text-white bg-orange-600 px-8 translate-x-16 h-40'>Explore some more</button>
+        </div>
+        <div className='w-full flex flex-col mx-auto gap-8'>
+          <article className="w-full h-80 md:h-auto max-h-[460px] md:aspect-[4/3] z-10  bg-gray-400"></article>
+          <article className="w-full h-80 md:h-auto max-h-[460px] md:aspect-[4/3]  bg-gray-400"></article>
+        </div>
+
       </section>
+
+      {/* fourth section */}
+      <Multimedia />
+    
+
     </main>
 
   );
