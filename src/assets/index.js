@@ -63,7 +63,16 @@ import ben_img_62 from "./img/ben-img (62).jpeg";
 import ben_img_63 from "./img/ben-img (63).jpeg";
 import ben_img_64 from "./img/ben-img (64).jpeg";
 
+import tranparent_img from './img/img1.png'
+import transparent_img_2 from './img/t_img1.png'
+
+
+import ben_video_1 from './vids/test.mp4'
 export {
+  tranparent_img,
+  transparent_img_2,
+
+
   about,
   ben_img_1,
   ben_img_2,
@@ -128,4 +137,9 @@ export {
   ben_img_62,
   ben_img_63,
   ben_img_64,
+
+
+
+  // videos
+  ben_video_1
 };
