@@ -62,10 +62,10 @@ export default function About() {
       <img
               src={ben_img_21}
               alt="Portrait"
-              className="w-full h-full object-cover  object-top "
+              className="w-full h-full object-cover  object-top  "
             />
           </div>
-          <div className="aspect-square w-full  bg-red-500 ">
+          <div className="aspect-square w-full  bg-orange-500 ">
             <h3 className="uppercase text-sm tracking-wider mb-4">
               Peak Performance
             </h3>
@@ -102,21 +102,11 @@ export default function About() {
             </button>
           </div>
           <div className= " aspect-[19/21.7]  w-full p-6 bg-red-500  ">
-            <h3 className="uppercase text-sm tracking-wider mb-4">
-              Peak Performance
-            </h3>
-            <h2 className="text-4xl font-bold mb-4">
-              PEAK
-              <br />
-              PERFORMANCE
-            </h2>
-            <p className="text-sm leading-relaxed mb-8">
-              Achieve your highest potential with guided strategies and
-              expertise.
-            </p>
-            <button className="bg-white text-orange-500 px-8 py-3 mx-auto hover:bg-gray-100 transition-colors">
-              LEARN MORE
-            </button>
+          <img
+              src={ben_img_21}
+              alt="Portrait"
+              className="w-full h-full object-cover  object-top  "
+            />
           </div>
       </div>
       </div>
