@@ -68,6 +68,11 @@ import transparent_img_2 from './img/t_img1.png'
 
 
 import ben_video_1 from './vids/test.mp4'
+import reel_1 from './vids/insta/reel1.mp4'
+import reel_2 from './vids/insta/reel2.mp4'
+import reel_3 from './vids/insta/reel3.mp4'
+
+
 export {
   tranparent_img,
   transparent_img_2,
@@ -141,5 +146,8 @@ export {
 
 
   // videos
-  ben_video_1
+  ben_video_1,
+  reel_1,
+  reel_2,
+  reel_3,
 };
