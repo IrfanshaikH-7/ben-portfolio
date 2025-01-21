@@ -1,5 +1,5 @@
 import React from "react";
-import { about,ben_img_21} from "../assets";
+import { about, ben_img_18, ben_img_21, ben_img_22 } from "../assets";
 
 export default function About() {
   return (
@@ -21,29 +21,35 @@ export default function About() {
 
             <div className="text-orange-500">
               <p className="text-xl md:text-2xl font-semibold font-glock">
-                <span>6 figure business mentor</span>
+                <span className="mx-2"></span>
+                <span>Tech Enthusiast</span>
                 <br />
                 <span className="mx-2">/</span>
-                <span>Dog mom</span>
-                <span className="mx-2">/</span>
                 <span>
-                  Avid <br /> traveler
+                  Avid Learner <br />
+                  Visionaryl
                 </span>
                 <span className="mx-2">/</span>
-                <span>Dreamer</span>
+                <span>
+                  Passionate <br /> Professional
+                </span>
               </p>
             </div>
             <div className="flex-end flex flex-col justify-end items-end">
               <div className="mt-24 max-w-sm">
-                <p className="text-xs leading-relaxed">
-                  I'm Rilea, and I've been where you are—overwhelmed, burned
-                  out, and questioning if success is worth the struggle. I
-                  started my first business with endless ambition but quickly
-                  realized that traditional "hustle" culture wasn't sustainable.
-                  After hitting burnout, I knew I had to find a different way.
-                  Through trial, error, and a lot of learning, I discovered the
-                  balance between growth and well-being, and I'm here to help
-                  you do the same.
+                <p className="text-xs leading-relaxed font-glock">
+                  Benjamin E. Miller is a seasoned professional with a strong
+                  background in organizational leadership, strategic planning,
+                  and team development. He specializes in leveraging data-driven
+                  insights to drive operational efficiency and foster
+                  innovation. With a passion for empowering individuals and
+                  organizations, Benjamin delivers tailored solutions that align
+                  with unique business goals. His expertise spans streamlining
+                  processes, enhancing collaboration, and achieving measurable
+                  success. Committed to continuous growth, he thrives in dynamic
+                  environments, creating value at every step. Explore his
+                  portfolio to see how Benjamin can help transform challenges
+                  into opportunities.
                 </p>
               </div>
 
@@ -56,16 +62,18 @@ export default function About() {
       </div>
 
       <div className=" text-black mt-40 py-16 gap-6 flex px-8 max-w-6xl mx-auto">
-      <div className="flex-1 flex  flex-col gap-6 text-sm mt-0.5">
-        <h2 className="py-8 flex items-center justify-center  text-6xl font-bold font-glock">Banjamin</h2>
-      <div className="aspect-square  max-h-fit w-full bg-red-500 ">
-      <img
-              src={ben_img_21}
+        <div className="flex-1 flex  flex-col gap-6 text-sm mt-0.5">
+          <h2 className="py-8 flex items-center justify-center  text-6xl font-bold font-glock">
+            Banjamin
+          </h2>
+          <div className="aspect-square  max-h-fit w-full bg-red-500 shadow-xl ">
+            <img
+              src={ben_img_22}
               alt="Portrait"
-              className="w-full h-full object-cover  object-top  "
+              className="w-full h-full object-cover  object-top   "
             />
           </div>
-          <div className="aspect-square w-full  bg-orange-500 ">
+          <div className="aspect-square w-full p-6  bg-slate-600 ">
             <h3 className="uppercase text-sm tracking-wider mb-4">
               Peak Performance
             </h3>
@@ -82,9 +90,9 @@ export default function About() {
               LEARN MORE
             </button>
           </div>
-      </div>
-      <div className="flex-1 flex flex-col gap-6">
-      <div className="aspect-[19/21.7] w-full p-6 bg-red-500 ">
+        </div>
+        <div className="flex-1 flex flex-col gap-6 ">
+          <div className="aspect-[19/21.7] w-full p-6 bg-slate-600  ">
             <h3 className="uppercase text-sm tracking-wider mb-4">
               One on One Coaching
             </h3>
@@ -101,14 +109,14 @@ export default function About() {
               LEARN MORE
             </button>
           </div>
-          <div className= " aspect-[19/21.7]  w-full p-6 bg-red-500  ">
-          <img
-              src={ben_img_21}
+          <div className=" aspect-[19/21.7] overflow-hidden  w-full bg-red-500  shadow-xl ">
+            <img
+              src={ben_img_18}
               alt="Portrait"
-              className="w-full h-full object-cover  object-top  "
+              className=" w-full h-full object-cover object-top"
             />
           </div>
-      </div>
+        </div>
       </div>
     </>
   );
