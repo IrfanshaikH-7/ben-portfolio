@@ -72,8 +72,11 @@ import reel_1 from './vids/insta/reel1.mp4'
 import reel_2 from './vids/insta/reel2.mp4'
 import reel_3 from './vids/insta/reel3.mp4'
 
-
+import menuIcon from './menu.svg'
+import menuCrossIcon from './menu-cross.svg'
 export {
+  menuIcon,
+  menuCrossIcon,
   tranparent_img,
   transparent_img_2,
 
