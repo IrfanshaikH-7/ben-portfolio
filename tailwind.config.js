@@ -20,6 +20,10 @@ export default {
       animation: {
         'scroll': 'scroll 20s linear infinite',
       },
+      colors: {
+        'primary': '#8EB486',
+        white: '#e3e0d8',
+      },
     },
   },
   plugins: [],

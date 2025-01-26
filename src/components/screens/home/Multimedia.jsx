@@ -83,14 +83,14 @@ export default function Multimedia() {
 
   return (
     <section className='min-h-screen relative w-full  py-24 overflow-hidden'>
-      <div className='absolute -left-12 -right-12 rotate-12 bg-orange-600 h-24 w-[150%] top-[45%]   flex items-center overflow-hidden whitespace-nowrap'>
+      <div className='absolute -left-12 -right-12 rotate-12 bg-[#8EB486] h-24 w-[150%] top-[45%]   flex items-center overflow-hidden whitespace-nowrap'>
           <div className='animate-scroll flex'>
             {[...Array(30)].map((_, i) => (
               <span key={i} className='text-lg font-bold text-neutral-100 mx-4'>MULTIMEDIA</span>
             ))}
           </div>
         </div>
-      <div className='w-full mx-auto px-8'>
+      <div className='w-full mx-auto px-4 md:px-8'>
         <div className='relative h-full grid grid-cols-1 min-[680px]:grid-cols-2 lg:grid-cols-3 gap-8' ref={containerRef}>
           {[
             { mt: "0px", gridColumn: isMobile ? "1" : "span 1" ,media: reel_1  },
@@ -118,7 +118,7 @@ export default function Multimedia() {
                 margin: "100px 0px -30% 0px",
                 once: false
               }}
-              className={`${index % 2 === 0 ? 'aspect-[9/16]' : 'aspect-[12/9]'} w-full sm:max-w-80 self-center bg-slate-300 relative mx-auto`}
+              className={`${index % 2 === 0 ? 'aspect-[9/16]' : 'aspect-[12/9]'} w-full sm:max-w-80 self-center bg-slate-300 relative mx-auto  rounded-xl overflow-hidden`}
               style={{ 
                 marginTop: isMobile ? '0px' : card.mt,
                 gridColumn: isMobile ? 0 : card.gridColumn

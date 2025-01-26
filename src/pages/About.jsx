@@ -53,7 +53,7 @@ export default function About() {
                 </p>
               </div>
 
-              <button className="bg-orange-500 text-white px-8 py-4 hover:bg-orange-600 transition-colors">
+              <button className="bg-orange-500 text-white px-8 py-4 hover:bg-[#8EB486] transition-colors">
                 WORK WITH ME
               </button>
             </div>
