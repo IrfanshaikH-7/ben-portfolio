@@ -21,8 +21,10 @@ export default {
         'scroll': 'scroll 20s linear infinite',
       },
       colors: {
+        'para':'#16404D',
         'primary': '#8EB486',
         white: '#e3e0d8',
+        'greeny': '#8EB486'
       },
     },
   },

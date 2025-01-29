@@ -121,6 +121,10 @@ export default function Home() {
 
       {/* fourth section */}
       <Multimedia />
+
+      <footer className='h-96 w-full bg-greeny '>
+
+      </footer>
     
 
     </main>
