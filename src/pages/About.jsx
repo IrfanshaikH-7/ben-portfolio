@@ -1,5 +1,4 @@
-import React from "react";
-import { about, ben_img_18, ben_img_21, ben_img_22 } from "../assets";
+import { about, ben_img_18, ben_img_22 } from "../assets";
 
 export default function About() {
   return (
@@ -16,7 +15,7 @@ export default function About() {
 
           <div className="relative z-10">
             <h1 className="text-6xl md:text-8xl font-bold mb-8 font-glock">
-              Hi, I'm Benjamin
+              Hi, I&apos;m Benjamin
             </h1>
 
             <div className="text-orange-500">
@@ -63,57 +62,110 @@ export default function About() {
 
       <div className=" text-black mt-40 py-16 gap-6 flex px-8 max-w-6xl mx-auto">
         <div className="flex-1 flex  flex-col gap-6 text-sm mt-0.5">
-          <h2 className="py-8 flex items-center justify-center  text-6xl font-bold font-glock">
-            Banjamin
+          <h2 className="py-2 flex items-center justify-center  text-6xl font-bold font-glock">
+            <p className="text-blue-900">Ben&apos;s Parsona</p>
           </h2>
-          <div className="aspect-square  max-h-fit w-full bg-red-500 shadow-xl ">
+          <div className="aspect-square max-h-[600px] w-full  shadow-xl  ">
             <img
               src={ben_img_22}
               alt="Portrait"
-              className="w-full h-full object-cover  object-top   "
+              className="w-full h-full object-cover object-top"
             />
           </div>
-          <div className="aspect-square w-full p-6  bg-slate-600 ">
-            <h3 className="uppercase text-sm tracking-wider mb-4">
-              Peak Performance
-            </h3>
+          <div className="aspect-[19/21.7] w-full p-6 bg-slate-600  ">
             <h2 className="text-4xl font-bold mb-4">
-              PEAK
-              <br />
-              PERFORMANCE
+              The Global Business Strategist
             </h2>
-            <p className="text-sm leading-relaxed mb-8">
-              Achieve your highest potential with guided strategies and
-              expertise.
+            <p className="text-sm leading-relaxed mb-4">
+              Benjamin&rsquo;s experience includes exposure to international
+              markets, providing him with a global perspective on business
+              operations.
             </p>
-            <button className="bg-white text-orange-500 px-8 py-3 mx-auto hover:bg-gray-100 transition-colors">
+            <h2 className="text-xl font-bold mb-4 -pb-2">Key Traits:</h2>
+            <ul className="text-sm leading-relaxed mb-4 list-disc pl-4">
+              <li>
+                Cultural Awareness: Understands the nuances of conducting
+                business across different cultures and adapts strategies
+                accordingly.
+              </li>
+              <li>
+                Market Analyst: Proficient in analyzing global market trends to
+                identify opportunities for expansion.
+              </li>
+              <li>
+                Network Builder: Establishes and maintains relationships with
+                key stakeholders worldwide.
+              </li>
+            </ul>
+
+            <h2 className="text-xl font-bold mb-4 -pb-2">
+              Professional Goals:
+            </h2>
+            <ul className="text-sm leading-relaxed mb-4 list-disc pl-4">
+              <li>
+                To expand the organization&rsquo;s presence in international
+                markets through strategic initiatives
+              </li>
+              <li>
+                To leverage global networks to drive business growth and
+                innovation.
+              </li>
+            </ul>
+            <button className="bg-black text-white px-8 py-3 mx-auto hover:bg-gray-800 transition-colors">
               LEARN MORE
             </button>
           </div>
         </div>
         <div className="flex-1 flex flex-col gap-6 ">
           <div className="aspect-[19/21.7] w-full p-6 bg-slate-600  ">
-            <h3 className="uppercase text-sm tracking-wider mb-4">
-              One on One Coaching
-            </h3>
             <h2 className="text-4xl font-bold mb-4">
-              BUSINESS
+              The Strategic
               <br />
-              MENTORING
+              Financial Leader
             </h2>
-            <p className="text-sm leading-relaxed mb-8">
-              Personalized coaching sessions tailored to your business needs and
-              goals.
+            <p className="text-sm leading-relaxed mb-4">
+              Benjamin E. Miller has a robust background in finance, holding key
+              positions that have honed his expertise in financial analysis,
+              strategic planning, and investment management.
             </p>
+            <h2 className="text-xl font-bold mb-4 -pb-2">Key Traits:</h2>
+            <ul className="text-sm leading-relaxed mb-4 list-disc pl-4">
+              <li>
+                Analytical Thinker: Demonstrates a keen ability to dissect
+                complex financial data to inform strategic decisions.
+              </li>
+              <li>
+                Risk Manager: Skilled in identifying potential financial risks
+                and implementing measures to mitigate them.
+              </li>
+              <li>
+                Strategic Planner: Adept at developing long-term financial
+                strategies that align with organizational goals.
+              </li>
+            </ul>
+
+            <h2 className="text-xl font-bold mb-4 -pb-2">
+              Professional Goals:
+            </h2>
+            <ul className="text-sm leading-relaxed mb-4 list-disc pl-4">
+              <li>
+                To lead financial teams in optimizing resource allocation and
+                maximizing profitability.
+              </li>
+              <li>
+                To stay abreast of market trends and adjust strategies
+                accordingly to maintain a competitive edge.
+              </li>
+            </ul>
             <button className="bg-black text-white px-8 py-3 mx-auto hover:bg-gray-800 transition-colors">
               LEARN MORE
             </button>
           </div>
-          <div className=" aspect-[19/21.7] overflow-hidden  w-full bg-red-500  shadow-xl ">
+          <div className="aspect-square max-h-600px] overflow-hidden w-full bg-red-500 shadow-xl">
             <img
               src={ben_img_18}
               alt="Portrait"
-              className=" w-full h-full object-cover object-top"
+              className="w-full h-full object-cover object-top"
             />
           </div>
         </div>
