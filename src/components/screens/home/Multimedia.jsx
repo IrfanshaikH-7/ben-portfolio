@@ -116,10 +116,10 @@ export default function Multimedia() {
                 }
               }}
               viewport={{ 
-                margin: "100px 0px -30% 0px",
+                margin: "100px 0px 0px 0px",
                 once: false
               }}
-              className={`aspect-[9/16] w-full sm:max-w-60 self-center bg-slate-300 relative mx-auto  rounded-xl overflow-hidden`}
+              className={`aspect-[9/16] w-full border-4 border-greeny  sm:max-w-60 self-center bg-slate-300 relative mx-auto  rounded-xl overflow-hidden`}
               style={{ 
                 marginTop: isMobile ? '0px' : card.mt,
                 gridColumn: isMobile ? 0 : card.gridColumn
@@ -204,10 +204,10 @@ export default function Multimedia() {
                 }
               }}
               viewport={{ 
-                margin: "100px 0px -30% 0px",
+                margin: "100px 0px 0px 0px",
                 once: false
               }}
-              className={`aspect-[16/9] w-full sm:max-w-72 self-center bg-slate-300 relative mx-auto  rounded-xl overflow-hidden`}
+              className={`aspect-[16/9] w-full  border-4 border-greeny  sm:max-w-72 self-center bg-slate-300 relative mx-auto  rounded-xl overflow-hidden`}
               style={{ 
                 marginTop: isMobile ? '0px' : card.mt,
                 gridColumn: isMobile ? 0 : card.gridColumn

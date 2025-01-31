@@ -3,6 +3,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import Multimedia from '../components/screens/home/Multimedia';
 import { ben_img_40, ben_img_47, ben_img_63, tranparent_img, transparent_img_2 } from '../assets';
 import Button from '../components/core/Button';
+import { fadeInUp, slideInLeft, slideInLeftDelay } from '../utils/variants';
 
 export default function Home() {
 
@@ -24,9 +25,14 @@ export default function Home() {
 
         {/* background image */}
         <section className='flex absolute w-full min-[840px]:pointer-events-none  flex-col min-[840px]:flex-row -translate-x-1/2 left-1/2 -bottom-11  z-10 items-center justify-center'>
-          <div className=' overflow-hidden object-cover relative'>
+          <motion.div 
+            variants={fadeInUp}
+            initial="initial"
+            animate="animate"
+            className='overflow-hidden object-cover relative'
+          >
             <img src={transparent_img_2} alt="" className='w-full h-full top-8 min-w-[300px] max-w-[420px] object-cover' />
-          </div>
+          </motion.div>
           <div className='h-40 bg-black flex flex-col w-full min-[840px]:hidden -mt-11'>
             <div className='flex-1 flex items-center justify-center font-semibold text-white text-xl hover:tracking-[0.5em] transition-all duration-300 cursor-pointer bg-[#8EB486] w-full h-full'>
             Explore
@@ -67,7 +73,12 @@ export default function Home() {
           <h2 className='text-xl md:text-[2vw] font-glock text-white z-10 leading-none'>Welcome to <span className='text-[#8EB486]'>Ben's</span> World</h2>
           <p className='text-white text-sm text-center font-glock md:text-[3vw] md:mt-4'>Social Entrepreneur, Socialite, Artist, and Writer.</p>
           <div className='py-16 flex flex-col md:flex-row gap-6 lg:gap-16 items-center md:items-end '>
-            <div className='flex px-4 md:px-6 items-center  w-full '>
+            <motion.div 
+            variants={slideInLeft}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            className='flex px-4 md:px-6 items-center  w-full '>
               <div className='h-40 hidden md:block aspect-[4/3] md:aspect-square translate-x-8 z-10  '>
               <img src={ben_img_63} alt="" className='w-full h-full object-cover rounded-xl overflow-hidden' />
 
@@ -78,12 +89,18 @@ export default function Home() {
                 <img src={ben_img_63} alt="" className='w-full h-full object-cover' />
                 </div>
               </div>
-            </div>
+            </motion.div>
 
-            <div className='max-w-lg space-y-8 px-6 md:px-0 md:pr-8'>
-              <p className='text-white text-sm md:text-base'>
+            <div className='max-w-lg overflow-hidden space-y-8 px-6 md:px-0 md:pr-8'>
+              <motion.p 
+                variants={slideInLeft}
+                initial="initial"
+                whileInView="animate"
+                viewport={{ once: true }}
+                className='text-white text-sm md:text-base'
+              >
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum obcaecati reprehenderit sequi. Magni consequatur ad odio, dignissimos, voluptatum reprehenderit nemo soluta ab excepturi porro repellat deserunt recusandae. Cum nulla deserunt doloremque maxime.
-              </p>
+              </motion.p>
               <Button >
                 Explore
               </Button>
@@ -106,7 +123,12 @@ export default function Home() {
         </div>
 
         <div className='w-full flex flex-col mx-auto gap-8 relative '>
-          <h3 className='text-xl md:text-6xl font-rubix text-black z-10 font-medium leading-none'>Explore <span className='text-[#8EB486] font-serif italic'>Ben's</span> Blogs</h3>
+          <h3 className='text-xl md:text-6xl font-rubix text-black z-10 font-bold leading-none tracking-widest'>Explore <br /> <motion.p
+          variants={slideInLeftDelay}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true }}
+          className='text-[#8EB486] font-serif inline-block italic'>Ben's</motion.p> Blogs</h3>
 
           <article className="w-full h-80 md:h-auto max-h-[500px] md:aspect-square bg-gray-400  rounded-xl overflow-hidden"></article>
           <button className='flex  py-4 rounded-xl items-center font-medium border-b-2 border-white md:mt-8 text-white bg-[#8EB486] px-8 translate-x-16 h-40'>Explore some more</button>
