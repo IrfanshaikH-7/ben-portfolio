@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      maxWidth: {
+        '8xl': '88rem', // 1408px
+      },
       fontFamily: {
         glock: ['Gloock', 'serif'],
         rubix: ['Rubik', 'sans-serif'],

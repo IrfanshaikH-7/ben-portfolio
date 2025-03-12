@@ -4,6 +4,9 @@ import Multimedia from '../components/screens/home/Multimedia';
 import { ben_img_40, ben_img_47, ben_img_63, tranparent_img, transparent_img_2 } from '../assets';
 import Button from '../components/core/Button';
 import { fadeInUp, slideInLeft, slideInLeftDelay } from '../utils/variants';
+import Collaboration from '../components/screens/home/collaboration';
+import BannerTrail from '../components/core/BannerTrail';
+import CTA from '../components/screens/home/CTA';
 
 export default function Home() {
 
@@ -44,10 +47,10 @@ export default function Home() {
         </section>
 
         {/* buttons */}
-        <div className='hidden min-[840px]:flex w-full  items-start justify-between max-w-7xl mx-auto px-4 lg:px-12 '>
+        <div className='hidden min-[840px]:flex w-full  items-start justify-between max-w-8xl mx-auto px-4 lg:px-12 '>
 
           <div className='flex flex-col gap-4 justify-center items-end '>
-          <Button className={'bg-[#8EB486] text-white px-8 py-2 w-60'}>
+          <Button className={'bg-[#8EB486]  text-white px-8 py-2 w-60'}>
           Explore
          </Button>
          <Button className={'bg-[#8EB486] text-white px-8 py-2 w-48 lg:w-40'}>
@@ -80,12 +83,12 @@ export default function Home() {
             viewport={{ once: true }}
             className='flex px-4 md:px-6 items-center  w-full '>
               <div className='h-40 hidden md:block aspect-[4/3] md:aspect-square translate-x-8 z-10  '>
-              <img src={ben_img_63} alt="" className='w-full h-full object-cover rounded-xl overflow-hidden' />
+              <img src={ben_img_63} alt="" className='w-full h-full object-cover overflow-hidden' />
 
               </div>
               <div className='w-20  flex-1  md:min-w-80 aspect-[9/12]  spect-[4/3] md:aspect-[12/21] relative '>
-              <img src={ben_img_40} alt="" className='w-full h-full object-cover rounded-xl overflow-hidden' />
-                <div className='h-32 md:h-40 block  rounded-xl overflow-hidden  md:hidden aspect-square translate-x-8 z-10 bg-slate-900 absolute top-1/2 -left-10 md:-left-14 -translate-y-1/2'>
+              <img src={ben_img_40} alt="" className='w-full h-full object-cover overflow-hidden' />
+                <div className='h-32 md:h-40 block  overflow-hidden  md:hidden aspect-square translate-x-8 z-10 bg-slate-900 absolute top-1/2 -left-10 md:-left-14 -translate-y-1/2'>
                 <img src={ben_img_63} alt="" className='w-full h-full object-cover' />
                 </div>
               </div>
@@ -112,37 +115,36 @@ export default function Home() {
       </section>
 
       {/* third section */}
-      <section className='relative flex flex-col md:flex-row gap-8 items-center p-4 md:p-8 justify-center overflow-hidden'>
+      <section className='relative flex flex-col md:flex-row gap-8 items-center p-4 xl:p-16 justify-center overflow-hidden'>
         {/* Background text strip */}
-        <div className='absolute -left-12 -right-12 -rotate-12 bg-black h-24 w-[150%] top-[45%]   flex items-center overflow-hidden whitespace-nowrap'>
-          <div className='animate-scroll flex'>
-            {[...Array(30)].map((_, i) => (
-              <span key={i} className='text-lg font-bold text-neutral-600 mx-4'>BLOGS</span>
-            ))}
-          </div>
-        </div>
+        <BannerTrail text={"BLOGS"} bgColor={"#000"} direction={12} revert={false} />
 
         <div className='w-full flex flex-col mx-auto gap-8 relative '>
-          <h3 className='text-xl md:text-6xl font-rubix text-black z-10 font-bold leading-none tracking-widest'>Explore <br /> <motion.p
+          <h3 className='text-3xl  md:text-6xl font-rubix text-black z-10 font-bold leading-none tracking-widest'>Explore <br /> 
+          <motion.p
           variants={slideInLeftDelay}
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
-          className='text-[#8EB486] font-serif inline-block italic'>Ben's</motion.p> Blogs</h3>
+          className='text-[#8EB486] font-serif inline-block italic '>Ben's</motion.p> Blogs</h3>
 
-          <article className="w-full h-80 md:h-auto max-h-[500px] md:aspect-square bg-gray-400  rounded-xl overflow-hidden"></article>
-          <button className='flex  py-4 rounded-xl items-center font-medium border-b-2 border-white md:mt-8 text-white bg-[#8EB486] px-8 translate-x-16 h-40'>Explore some more</button>
+          <article className="w-full h-80 md:h-auto max-h-[500px] md:aspect-square bg-gray-400  overflow-hidden"></article>
+          <button className='flex  py-4 items-center font-medium border-b-2 border-white md:mt-8 text-white bg-[#8EB486] px-8 translate-x-16 h-40'>Explore some more</button>
         </div>
         <div className='w-full flex flex-col mx-auto gap-8'>
-          <article className="w-full h-80 md:h-auto max-h-[460px] md:aspect-[4/3] z-10  bg-gray-400  rounded-xl overflow-hidden">
+          <article className="w-full h-80 md:h-auto max-h-[460px] md:aspect-[4/3] z-10  bg-gray-400  overflow-hidden">
           </article>
-          <article className="w-full h-80 md:h-auto max-h-[460px] md:aspect-[4/3]  bg-gray-400  rounded-xl overflow-hidden"></article>
+          <article className="w-full h-80 md:h-auto max-h-[460px] md:aspect-[4/3]  bg-gray-400  overflow-hidden"></article>
         </div>
 
       </section>
 
       {/* fourth section */}
       <Multimedia />
+
+      {/* fifth section */}
+      <Collaboration />
+      <CTA />
 
       <footer className='h-96 w-full bg-greeny '>
 

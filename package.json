@@ -10,7 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@lexical/code": "^0.25.0",
+    "@lexical/link": "^0.25.0",
+    "@lexical/list": "^0.25.0",
+    "@lexical/react": "^0.25.0",
+    "@lexical/rich-text": "^0.25.0",
+    "@lexical/table": "^0.25.0",
     "framer-motion": "^11.18.1",
+    "lexical": "^0.25.0",
     "lucide-react": "^0.471.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",

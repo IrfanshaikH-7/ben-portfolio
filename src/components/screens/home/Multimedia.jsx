@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ben_video_1, reel_1, reel_2, reel_3 } from '../../../assets';
+import BannerTrail from '../../core/BannerTrail';
 
 export default function Multimedia() {
   const containerRef = React.useRef(null);
@@ -83,18 +84,12 @@ export default function Multimedia() {
 
   return (
     <section className='min-h-screen relative w-full  py-24 overflow-hidden'>
-      <div className='absolute -left-12 -right-12 rotate-12 bg-[#8EB486] h-24 w-[150%] top-[45%]   flex items-center overflow-hidden whitespace-nowrap'>
-          <div className='animate-scroll flex'>
-            {[...Array(30)].map((_, i) => (
-              <span key={i} className='text-lg font-bold text-neutral-100 mx-4'>MULTIMEDIA</span>
-            ))}
-          </div>
-        </div>
+      <BannerTrail text={"MULTIMEDIA"} bgColor={"#8EB486"} direction={12} revert={true}/>
       <div className='w-full mx-auto px-4 md:px-8 max-w-7xl'>
         <h3 className='text-6xl font-glock py-8 text-center'>Social Feed</h3>
 
         <p className='bg-blue-50 w-fit py-2 px-8 ml-[70px] mb-6'>Social Reels</p>
-        <div className='relative h-full flex flex-wrap gap-8' ref={containerRef}>
+        <div className='relative h-full flex flex-wrap gap-12' ref={containerRef}>
           {[
             { media: reel_1  },
             { media: reel_1  },
@@ -181,7 +176,7 @@ export default function Multimedia() {
         </div>
 
         <p className='bg-blue-50 w-fit py-2 px-8 ml-[70px] mb-6 mt-16'>Youtube</p>
-        <div className='relative h-full flex flex-wrap gap-55' ref={containerRef}>
+        <div className='relative h-full flex flex-wrap gap-12 md:gap-0' ref={containerRef}>
           {[
             { media: reel_1  },
             { media: reel_1  },
@@ -267,8 +262,8 @@ export default function Multimedia() {
             </motion.div>
           ))}
         </div>
-        <h4 className='mt-12 py-6 text-lg bg-greeny px-8 font-bold w-[22%] whitespace-nowrap tracking-widest rounded-full hover:w-full group transition-all duration-300 '>
-          <p className='group-hover:translate-x-3/4 transition-all duration-500 text-white'> Navigate to More on <span className='text-para'>Multimedia</span></p></h4>
+        <h4 className='mt-12 py-6 text-sm min[420px]:text-lg bg-greeny px-8 font-bold w-full whitespace-nowrap tracking-widest rounded-full hover:w-full group transition-all duration-300 '>
+          <p className='transition-all text-sm md:text-lg duration-500 text-black w-full font-extrabold text-center font-glock'> Navigate to More on Multimedia</p></h4>
       </div>
     </section>
   );
